@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+    <link rel="stylesheet" href="C:\Users\aghoshal\Downloads\bootstrap-5.3.0-alpha1-dist\bootstrap-5.3.0-alpha1-dist\css\bootstrap.css">
+</head>
+<body style="background-color: bisque; font-style: normal">
+    <center>
+        <h1 style=" padding-top: 100px; font-size: larger; font-style: normal;">
+            <i>Tree structure</i> <br/>
+            {% for i in tree%}
+                {% for j in i %}
+                    {{j}}
+                {% endfor %}
+                <br />
+            {% endfor %}
+            <br /></h1>
+            <h2 style="color: darkblue; padding-top: 30px; font-size: large;font-style:normal">
+            <b>BFS Traversal Search Result</b> <br/>
+            {{ans}}</h2>
+            <br/>
+            <h3 style="color:darkblue; padding-top: 10px; font-size: large;font-style:normal">
+            <b>DFS Traversal Search Result</b> <br/>
+            {{ans2}}
+            </h3>
+
+
+    </center>
+
+
+</body>
+</html>
